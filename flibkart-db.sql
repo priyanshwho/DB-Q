@@ -25,3 +25,17 @@ VALUES
 ('Yoga Mat','YM1009',999,35,true,'fitness'),
 ('Water Bottle','WB1010',599,60,true,'fitness');
 select * from products;
+
+
+
+select name, price from products;
+
+select category from products group by category;
+
+
+select category , count(*) from products 
+Group by category
+having count(*)>1;
+
+
+select * from products order by price desc;
