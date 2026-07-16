@@ -11,13 +11,17 @@ create table products(
 );
 
 
-insert into products (
-  name, sku_code, price, stock_quantity, is_available,category
-  )
-values('keyboard','8765432a',300,25,true,'electronics'),
-('board','8765433a',320,12,true,'electronics'),
-('key','8765422a',302,51,false,'electronics'),
-('mouse','8761432a',220,2,true,'electronics');
 
-
+insert into products(name, sku_code, price, stock_quantity, is_available, category)
+VALUES
+('Wireless Mouse','WM1001',899,50,true,'electronics'),
+('Bluetooth Speaker','BS1002',2499,30,true,'electronics'),
+('Laptop Stand','LS1003',1299,25,true,'accessories'),
+('USB-C Hub','UH1004',1799,20,true,'accessories'),
+('Notebook','NB1005',199,100,true,'stationery'),
+('Pen Set','PS1006',349,80,true,'stationery'),
+('Coffee Mug with Lid','CM1007',499,40,true,'home and kitchen'),
+('LED Desk Lamp','DL1008',1499,15,true,'home and kitchen'),
+('Yoga Mat','YM1009',999,35,true,'fitness'),
+('Water Bottle','WB1010',599,60,true,'fitness');
 select * from products;
