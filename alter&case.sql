@@ -56,3 +56,35 @@ alter table students
 alter column age drop default;
 
 select * from students;
+
+
+
+-- -----------------------------
+
+
+alter table students
+alter column age type smallint;
+
+
+alter table students
+alter column age set default 18;
+
+
+alter table students
+alter column age drop default;
+
+
+alter table students 
+add constraint age_check check(age>=0);
+
+alter table students 
+drop constraint students_pkey;
+
+alter table students
+rename to school_students;
+
+
+select * from students;
+
+
+
