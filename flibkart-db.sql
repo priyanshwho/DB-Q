@@ -39,3 +39,43 @@ having count(*)>1;
 
 
 select * from products order by price desc;
+
+
+
+select * from products;
+
+select * from products where category !='electronics';
+
+
+
+select * from products;
+
+select * from products where category !='electronics';
+
+
+
+select * from products;
+
+select * from products where price>500 and category ='electronics';
+
+select * from products;
+
+select * from products where price>500 and category ='electronics' and stock_quantity>20;
+
+
+
+select * from products;
+-- select * from products where price<1000 and price>400;
+select * from products where price between 400 and 1000;
+
+-- START WITH W
+select * from products where sku_code like 'W%'; 
+
+-- SHOULD HAVE 10 IN BETWEEN
+select * from products where sku_code like '%10%';
+
+-- not 
+select * from products where not category ='electronics'
+
+
+select round(avg(price),2) from products where category ='electronics';
